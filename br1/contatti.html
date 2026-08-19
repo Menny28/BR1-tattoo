@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prenota — BR1 Tattoo Studio</title>
+<meta name="description" content="Prenota una consulenza da BR1 Tattoo Studio, Via Palmino Sterzi 41. Email tommymene04@gmail.com, telefono +39 366 548 8260.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800&family=Space+Mono:wght@400;700&family=Spectral:ital,wght@0,300;0,400;1,300&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress"></div>
+
+<header class="site-head">
+  <a class="brand" href="index.html"><span class="brand__mark">BR1</span><span class="brand__tag">Tattoo Studio</span></a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label class="burger" for="nav-toggle" aria-label="Apri il menu"><span></span><span></span><span></span></label>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="galleria.html">Galleria</a>
+    <a href="stili.html">Stili &amp; Prezzi</a>
+    <a href="studio.html">Lo studio</a>
+    <a href="cura.html">Cura &amp; FAQ</a>
+    <a class="is-current" href="contatti.html">Prenota</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero hero--page">
+    <div class="hero__bg" style="background-image:url('img/insegna-neon.jpg')"></div>
+    <div class="hero__grain"></div>
+    <div class="hero__inner">
+      <span class="eyebrow">Scrivimi</span>
+      <h1 class="hero__title">Prenota</h1>
+      <p class="lead" style="margin-top:1.5rem">Racconta l'idea con le tue parole. Rispondo entro due giorni lavorativi, sempre di persona.</p>
+    </div>
+  </section>
+
+  <!-- CONTATTI RAPIDI -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="quick reveal">
+        <a href="mailto:tommymene04@gmail.com"><span>Email</span><strong>tommymene04@<br>gmail.com</strong></a>
+        <a href="tel:+393665488260"><span>Telefono</span><strong>+39 366 548 8260</strong></a>
+        <a href="https://wa.me/393665488260" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Scrivi ora</strong></a>
+        <div><span>Studio</span><strong>Via Palmino<br>Sterzi 41</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="section panel">
+    <div class="panel__bg" style="background-image:url('img/disegno-koi.jpg')"></div>
+    <div class="wrap split split--wide-left">
+      <div class="reveal">
+        <span class="eyebrow">Richiesta appuntamento</span>
+        <h2 class="mask"><span>Dimmi cosa<br>hai in mente</span></h2>
+        <p class="lead" style="margin-top:1.5rem">Più dettagli mi dai, più la risposta sarà precisa. Se hai immagini di riferimento, allegale all'email che si aprirà alla fine.</p>
+        <div class="acc" style="margin-top:2.5rem">
+          <details>
+            <summary>Cosa succede dopo l'invio</summary>
+            <p>Leggo la richiesta, ti scrivo con una fascia di prezzo e due o tre date possibili. Se il progetto è complesso, ci vediamo prima in studio per una consulenza gratuita. L'appuntamento si conferma con un acconto del 20%.</p>
+          </details>
+          <details>
+            <summary>Se devi disdire</summary>
+            <p>Avvisami con almeno 48 ore di anticipo e l'acconto resta valido per una nuova data. Sotto le 48 ore l'acconto copre il tempo riservato e non è recuperabile.</p>
+          </details>
+        </div>
+      </div>
+
+      <form class="calc reveal" data-d="1" id="booking">
+        <div class="form form--2">
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input id="f-nome" name="nome" type="text" required placeholder="Come ti chiami">
+          </div>
+          <div class="field">
+            <label for="f-telefono">Telefono</label>
+            <input id="f-telefono" name="telefono" type="tel" placeholder="Per i messaggi veloci">
+          </div>
+          <div class="field full">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" required placeholder="Dove ti rispondo">
+          </div>
+          <div class="field">
+            <label for="f-stile">Stile</label>
+            <select id="f-stile" name="stile">
+              <option>Non lo so ancora</option>
+              <option>Realismo</option>
+              <option>Giapponese</option>
+              <option>Fineline</option>
+              <option>Blackwork</option>
+              <option>Lettering</option>
+              <option>Old school</option>
+              <option>Cover-up</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-zona">Zona del corpo</label>
+            <input id="f-zona" name="zona" type="text" placeholder="Es. avambraccio interno">
+          </div>
+          <div class="field">
+            <label for="f-misura">Misura indicativa</label>
+            <input id="f-misura" name="misura" type="text" placeholder="Es. 12 cm">
+          </div>
+          <div class="field">
+            <label for="f-prima">È il tuo primo tatuaggio?</label>
+            <select id="f-prima" name="prima">
+              <option>Sì, il primo</option>
+              <option>No, ne ho altri</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-idea">La tua idea</label>
+            <textarea id="f-idea" name="idea" required placeholder="Soggetto, significato, riferimenti, budget, periodo in cui vorresti farlo…"></textarea>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn--neon" type="submit"><span>Invia la richiesta</span></button>
+        </div>
+        <p class="note" id="booking-msg" hidden style="margin-top:1.5rem">Si è aperto il tuo programma di posta con il messaggio già compilato: controlla e premi invia. Se non succede niente, scrivimi direttamente a tommymene04@gmail.com.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAPPA -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Dove siamo</span>
+      <h2 class="reveal" style="margin-bottom:2.5rem">Via Palmino Sterzi 41</h2>
+      <div class="map reveal">
+        <iframe title="Mappa dello studio BR1" src="https://www.google.com/maps?q=Via%20Palmino%20Sterzi%2041&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="info-row" style="margin-top:3rem">
+        <div class="reveal"><span class="mono muted">Martedì / Venerdì</span><strong>11 – 19</strong></div>
+        <div class="reveal" data-d="1"><span class="mono muted">Sabato</span><strong>10 – 17</strong></div>
+        <div class="reveal" data-d="2"><span class="mono muted">Domenica e lunedì</span><strong>Chiuso</strong></div>
+        <div class="reveal" data-d="3"><span class="mono muted">Buoni regalo</span><strong>Da €80</strong></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-mark">BR1</span>
+        <p class="muted" style="max-width:38ch">Tattoo studio su appuntamento. Realismo, giapponese, fineline, blackwork e lettering.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:tommymene04@gmail.com">tommymene04@gmail.com</a></li>
+          <li><a href="tel:+393665488260">+39 366 548 8260</a></li>
+          <li class="muted">Via Palmino Sterzi 41</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Naviga</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galleria.html">Galleria</a></li>
+          <li><a href="stili.html">Stili &amp; Prezzi</a></li>
+          <li><a href="studio.html">Lo studio</a></li>
+          <li><a href="cura.html">Cura &amp; FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year></span> BR1 Tattoo Studio</span>
+      <span>Solo maggiorenni · Documento obbligatorio</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

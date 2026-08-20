@@ -1,0 +1,20 @@
+ANTEPRIMA DEL LINK — file da caricare su GitHub
+
+Carica questi file nella RADICE del repository (stesso livello di index.html),
+sovrascrivendo quelli esistenti:
+
+  index.html
+  galleria.html
+  stili.html
+  studio.html
+  cura.html
+  contatti.html
+  og-preview.jpg          <-- l'immagine dell'anteprima
+  favicon.png             <-- icona nella scheda del browser
+  apple-touch-icon.png    <-- icona se salvi il sito sulla home dell'iPhone
+
+Dopo 1-2 minuti il link mostrera' immagine, titolo e descrizione.
+
+NOTA: WhatsApp e Telegram tengono in memoria la vecchia anteprima per giorni.
+Per forzare l'aggiornamento manda il link con ?v=2 in fondo, cosi:
+https://menny28.github.io/BR1-tattoo/?v=2
